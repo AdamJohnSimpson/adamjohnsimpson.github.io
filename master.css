@@ -1,12 +1,12 @@
 @import("https://fonts.googleapis.com/css?family=Abril+Fatface");
 
 body {
-   background-color: #222;
+   background-color: #111;
+   font-family: 'KoHo', sans-serif;
 }
 
 h1 {
-  font-family: 'Abril Fatface';
-  margin: 1% 1%
+  margin: 0% 1%
 }
 
 p {
@@ -29,7 +29,7 @@ li a {
  display: block;
  color: white;
  text-align: center;
- padding: 14px 16px;
+ padding: 10px 16px;
  text-decoration: none;
 }
 
@@ -38,13 +38,13 @@ li a:hover {
 }
 
 header {
-  background-color: #5E5E5E ;
+  background-color: #222 ;
   color: white;
   margin: 2% 8%;
 }
 
-main {
-  background-color: #5E5E5E ;
+section {
+  background-color: #222 ;
   color: white;
   margin: 2% 8%;
 }
