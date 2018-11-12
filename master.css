@@ -21,11 +21,11 @@ ul {
  overflow: hidden;
 }
 
-li {
+header li {
  float: left;
 }
 
-li a {
+header li a {
  display: block;
  color: white;
  text-align: center;
@@ -33,7 +33,7 @@ li a {
  text-decoration: none;
 }
 
-li a:hover {
+header li a:hover {
  background-color: #111;
 }
 
@@ -47,4 +47,12 @@ section {
   background-color: #222 ;
   color: white;
   margin: 2% 8%;
+}
+
+.block {
+  color: white;
+  background-color: #222;
+  margin: 1% 50% 1% 8%;
+  padding: 5px 8px;
+  align: left;
 }
