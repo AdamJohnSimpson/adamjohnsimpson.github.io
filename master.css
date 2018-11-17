@@ -6,7 +6,8 @@ body {
 }
 
 h1 {
-  margin: 0% 1%
+  margin: 0% 1%;
+  font-size: 50px
 }
 
 p {
@@ -34,8 +35,16 @@ header li a {
 }
 
 header li a:hover {
+  animation-name: navbuttons;
+  animation-duration: 0.75s;
  background-color: #111;
 }
+
+
+@keyframes navbuttons {
+  from   {background-color: #222;}
+  to  {background-color: #111;}
+  }
 
 header {
   background-color: #222 ;
@@ -49,10 +58,26 @@ section {
   margin: 2% 8%;
 }
 
+img {
+  width: 84%;
+  height: auto;
+  margin: 1% 8%;
+}
+
 .block {
   color: white;
   background-color: #222;
   margin: 1% 50% 1% 8%;
   padding: 5px 8px;
   align: left;
+}
+
+.picture {
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.data {
+  flex-grow: 2;
+  margin: 10px;
 }
