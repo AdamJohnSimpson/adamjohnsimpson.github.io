@@ -10,11 +10,6 @@ h1 {
   font-size: 50px
 }
 
-p {
-  margin: 1% 2%;
-  padding: 1% 1%
-}
-
 ul {
  list-style-type: none;
  margin: 0;
@@ -37,17 +32,21 @@ header li a {
 header li a:hover {
   animation-name: navbuttons;
   animation-duration: 0.75s;
- background-color: #111;
+  background-color: #111;
 }
-
 
 @keyframes navbuttons {
   from   {background-color: #222;}
   to  {background-color: #111;}
-  }
+}
 
 header li.active {
   background-color: #333
+}
+
+header li.active a:hover {
+  background-color: #333;
+  animation: null
 }
 
 header {
@@ -62,22 +61,23 @@ section {
   margin: 2% 8%;
 }
 
-img {
-  width: 84%;
-  height: auto;
-  margin: 1% 8%;
+.rhblock {
+  color: white;
+  background-color: #222;
+  margin: 0% 8% 1% 40%;
+  padding: 1%;
 }
 
 .block {
   color: white;
   background-color: #222;
-  margin: 1% 8% 1% 40%;
+  margin: 1% 8% 1% 8%;
   padding: 1%;
 }
 
-main img {
+.portrait img {
   float: left;
   width: 30%;
   height: auto;
-  margin: 0% 8%;
+  margin-left: 8%;
 }
