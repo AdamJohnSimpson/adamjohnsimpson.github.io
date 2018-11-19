@@ -75,9 +75,37 @@ section {
   padding: 1%;
 }
 
+.landscape img {
+  width: 84%;
+  height: auto;
+  margin-left: 8%;
+}
+
 .portrait img {
   float: left;
   width: 30%;
   height: auto;
   margin-left: 8%;
+}
+
+.column {
+    color: white;
+    background-color: #222;
+    float: left;
+    width:30%;
+    margin: 0% 0% 2% 1%;
+    padding: 1%;
+}
+
+.row {
+    margin: 1% 8% 1% 8%;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 84%;
+    }
+    .row {
+      margin-left: 2% 8% 2% 2%
+    }
 }
