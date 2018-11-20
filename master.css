@@ -76,6 +76,13 @@ section {
   padding: 1%;
 }
 
+.CVblock {
+  color: white;
+  background-color: #222;
+  margin: 1% 8% 1% 8%;
+  padding: 1%;
+}
+
 .landscape img {
   width: 84%;
   height: auto;
@@ -98,9 +105,30 @@ section {
     padding: 1%;
 }
 
+.column:hover {
+  background-color: #333;
+  width: 31%;
+  height: auto;
+  margin: 0.5%
+}
+
 .row {
     margin: 1% 8% 1% 8%;
 }
+
+.project img {
+  width: 20%;
+  height: auto;
+  margin: 2%;
+  float: left;
+}
+
+.project {
+  background-color: #222;
+  margin: 0% 8% 2% 8%;
+  float: left;
+}
+
 
 @media screen and (max-width:700px) {
     .column {
@@ -121,7 +149,7 @@ section {
 }
 
 @media screen and (min-width:1520px) {
-  .block {
+  .CVblock {
     margin: 0% 8% 1% 40%;
   }
 }
