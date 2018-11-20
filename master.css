@@ -117,10 +117,10 @@ section {
 }
 
 .project img {
-  width: 20%;
-  height: auto;
-  margin: 2%;
-  float: left;
+    width: 25%;
+    height: auto;
+    margin: 2%;
+    float: left;
 }
 
 .project {
@@ -130,9 +130,18 @@ section {
 }
 
 
+
+@media screen and (max-width:1200px) {
+  .project img {
+    display: none;
+  }
+
 @media screen and (max-width:700px) {
     .column {
         width: 96%;
+    }
+    .column:hover {
+      width: 97%;
     }
     .row {
       margin-left: 2% 8% 2% 2%
@@ -152,4 +161,6 @@ section {
   .CVblock {
     margin: 0% 8% 1% 40%;
   }
+
+
 }
