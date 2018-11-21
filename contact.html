@@ -1,22 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <title>Adam Simpson | Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="unsemantic-master\assets\stylesheets\unsemantic-grid-responsive-tablet.css">
     <link rel="stylesheet" href="master.css">
     <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Contact</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script>
+    function NavOpen() {
+      document.getElementById("nav-window").style.width = "70%";
+    }
+    function NavClose() {
+      document.getElementById("nav-window").style.width = "0%";
+    }
+    </script>
   </head>
+
   <body>
-    <header>
-      <h1> ADAM SIMPSON </h1>
-    <nav>
-     <ul>
-     <li><a href="home.html">Home</a></li>
-     <li><a href="project.html">Project</a></li>
-     <li><a href="CV.html">CV</a></li>
-     <li class="active"><a href="contact.html">Contact</a></li>
-     </ul>
-     </nav>
+     <header>
+       <h1> ADAM SIMPSON </h1>
+      <ul class="browser-nav">
+      <li> <a href="home.html">Home</a> </li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-nav">
+       <button type="button" onclick="NavOpen()" class="nav-button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="nav-window" style="width:0">
+        <button type="button" onclick="NavClose()" class="nav-button">
+         <i class="fas fa-times"></i>
+       </button>
+        <ul class="mobile-nav">
+        <li> <a href="home.html">Home</a> </li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
     </header>
+
+    <main>
+      <div class="row">
+          <div class="column">
+              <h2>E-mail</h2>
+              <div class="icon">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="social-tag">
+                <p>adamj911@gmail.com</p>
+              </div>
+          </div>
+
+          <div class="column">
+              <h2>Phone</h2>
+              <div class="icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="social-tag">
+                <p>+44 7519 479026</p>
+              </div>
+          </div>
+
+        <a href="https://github.com/AdamJohnSimpson">
+          <div class="column">
+              <h2>Github</h2>
+              <div class="icon">
+                <i class="fab fa-github-square"></i>
+              </div>
+              <div class="social-tag">
+                <p>AdamJohnSimpson</p>
+              </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="row">
+        <a href="https://twitter.com/adamguy21">
+          <div class="column">
+              <h2>Twitter</h2>
+              <div class="icon">
+                <i class="fab fa-twitter-square"></i>
+              </div>
+              <div class="social-tag">
+                <p>@adamguy21</p>
+              </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/_adamsimpson_/?hl=en">
+          <div class="column">
+              <h2>Instagram</h2>
+              <div class="icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="social-tag">
+                <p>@_adamsimpson_</p>
+              </div>
+          </div>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100010126711328">
+          <div class="column">
+              <h2>Facebook</h2>
+              <div class="icon">
+                <i class="fab fa-facebook"></i>
+              </div>
+              <div class="social-tag">
+                <p>Adam Simpson</p>
+              </div>
+          </div>
+        </a>
+    </main>
+
+    <footer>
+        <p>Follow Me: </p>
+        <div class="icon">
+          <a href="https://github.com/AdamJohnSimpson"><i class="fab fa-github-square"></i></a>
+          <a href="https://twitter.com/adamguy21"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/_adamsimpson_/?hl=en"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100010126711328"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+  </div>
   </body>
 </html>

@@ -3,11 +3,37 @@
 body {
    background-color: #111;
    font-family: 'KoHo', sans-serif;
+   word-wrap: break-word;
+   height: 100%;
 }
 
 h1 {
   margin: 0% 1%;
-  font-size: 50px
+  font-size: 50px;
+}
+
+#nav-window {
+  height: 100%;
+  width: 70%;
+  background-color: #222;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.nav-button {
+  font-size: 30px;
+  margin: 2%;
+  background-color: #222;
+  border: none;
+  color: white;
 }
 
 ul {
@@ -17,7 +43,7 @@ ul {
  overflow: hidden;
 }
 
-header li {
+header .browser-nav li {
  float: left;
 }
 
@@ -75,6 +101,13 @@ section {
   padding: 1%;
 }
 
+.CVblock {
+  color: white;
+  background-color: #222;
+  margin: 1% 8% 1% 8%;
+  padding: 1%;
+}
+
 .landscape img {
   width: 84%;
   height: auto;
@@ -85,7 +118,7 @@ section {
   float: left;
   width: 30%;
   height: auto;
-  margin-left: 8%;
+  margin: 0% 0% 2% 8%;
 }
 
 .column {
@@ -97,15 +130,133 @@ section {
     padding: 1%;
 }
 
+.column:hover {
+  background-color: #333;
+}
+
+.home-tiles .column:hover {
+  width: 31%;
+  height: auto;
+  margin: 0.5%
+}
+
 .row {
     margin: 1% 8% 1% 8%;
 }
 
-@media screen and (max-width:600px) {
+.social-tag p {
+    font-size: 30px;
+    margin-left: 20%;
+}
+
+.project img {
+    width: 25%;
+    height: auto;
+    margin: 2%;
+    float: left;
+}
+
+.project {
+  background-color: #222;
+  margin: 0% 8% 2% 8%;
+  float: left;
+}
+
+footer {
+  margin: 0% 8% 0% 8%;
+  width: 84%;
+  bottom: 0;
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 1%;
+  float: left;
+}
+
+footer .icon {
+  float: none;
+}
+
+.icon {
+  font-size: 55px;
+  margin-left: 6%;
+  float: left;
+}
+
+.icon a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width:800px) {
+  ul.browser-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: inline;
+  }
+  ul {
+    font-size: 150%
+  }
+}
+
+@media screen and (min-width:1520px) {
+  .CVblock {
+    margin: 0% 8% 1% 40%;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .project img {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width:1450px) {
+    .home-tiles .column {
+      width: 30%
+    }
     .column {
-        width: 84%;
+        width: 45%;
     }
     .row {
-      margin-left: 2% 8% 2% 2%
+      margin: 0% 8% 0% 8%
+    }
+    @media screen and (max-width:950px) {
+        .column {
+            width: 96%;
+        }
+        .column:hover {
+          width: 97%;
+        }
+        @media screen and (max-width:700px) {
+            .home-tiles .column {
+                width: 96%;
+            }
+            .home-tiles .column:hover {
+              width: 97%;
+            }
+            .home-tiles .row {
+              margin: 0% 8% 0% 8%
+            }
+            .rhblock {
+              color: white;
+              background-color: #222;
+              margin: 1% 8% 1% 8%;
+              padding: 2%;
+            }
+            .portrait img {
+              margin: 4% 4% 0% 12%
+            }
+          }
+        @media screen and (max-width:450px) {
+            .icon {
+              font-size: 30px
+            }
+            .social-tag p {
+              font-size: 21px
+            }
     }
 }
