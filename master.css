@@ -203,6 +203,12 @@ footer .icon {
   .CVblock {
     margin: 0% 8% 1% 40%;
   }
+  .icon {
+    font-size: 70px
+  }
+  .social-tag {
+    font-size: 100px
+  }
 }
 
 @media screen and (max-width:1200px) {
@@ -230,7 +236,13 @@ footer .icon {
         .column:hover {
           width: 97%;
         }
+        .icon {
+          margin-left: 4%
+        }
         @media screen and (max-width:700px) {
+          h1 {
+            margin: 0% 4%;
+          }
             .home-tiles .column {
                 width: 96%;
             }
