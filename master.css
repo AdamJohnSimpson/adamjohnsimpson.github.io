@@ -9,7 +9,31 @@ body {
 
 h1 {
   margin: 0% 1%;
-  font-size: 50px
+  font-size: 50px;
+}
+
+#nav-window {
+  height: 100%;
+  width: 70%;
+  background-color: #222;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.nav-button {
+  font-size: 30px;
+  margin: 2%;
+  background-color: #222;
+  border: none;
+  color: white;
 }
 
 ul {
@@ -19,7 +43,7 @@ ul {
  overflow: hidden;
 }
 
-header li {
+header .browser-nav li {
  float: left;
 }
 
@@ -155,12 +179,25 @@ footer .icon {
 
 .icon {
   font-size: 55px;
+  margin-left: 6%;
   float: left;
 }
 
 .icon a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width:800px) {
+  ul.browser-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: inline;
+  }
+  ul {
+    font-size: 150%
+  }
 }
 
 @media screen and (min-width:1520px) {
@@ -175,30 +212,12 @@ footer .icon {
   }
 }
 
-@media screen and (max-width:700px) {
-    .home-tiles .column {
-        width: 96%;
-    }
-    .home-tiles .column:hover {
-      width: 97%;
-    }
-    .home-tiles .row {
-      margin: 0% 8% 0% 8%
-    }
-    .rhblock {
-      color: white;
-      background-color: #222;
-      margin: 1% 8% 1% 8%;
-      padding: 2%;
-    }
-    .portrait img {
-      margin: 4% 4% 0% 12%
-    }
-  }
+
 
 @media screen and (max-width:1450px) {
-
-
+    .home-tiles .column {
+      width: 30%
+    }
     .column {
         width: 45%;
     }
@@ -212,6 +231,26 @@ footer .icon {
         .column:hover {
           width: 97%;
         }
+        @media screen and (max-width:700px) {
+            .home-tiles .column {
+                width: 96%;
+            }
+            .home-tiles .column:hover {
+              width: 97%;
+            }
+            .home-tiles .row {
+              margin: 0% 8% 0% 8%
+            }
+            .rhblock {
+              color: white;
+              background-color: #222;
+              margin: 1% 8% 1% 8%;
+              padding: 2%;
+            }
+            .portrait img {
+              margin: 4% 4% 0% 12%
+            }
+          }
         @media screen and (max-width:450px) {
             .icon {
               font-size: 30px
