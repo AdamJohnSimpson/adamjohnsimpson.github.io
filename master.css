@@ -126,7 +126,7 @@ section {
     background-color: #222;
     float: left;
     width:30%;
-    margin: 0% 0% 2% 1%;
+    margin: 2% 0% 4% 1%;
     padding: 1%;
 }
 
@@ -179,7 +179,6 @@ footer .icon {
 
 .icon {
   font-size: 55px;
-  margin-left: 6%;
   float: left;
 }
 
@@ -195,7 +194,7 @@ footer .icon {
   .mobile-nav {
     display: inline;
   }
-  ul {
+  header ul {
     font-size: 150%
   }
 }
