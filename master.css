@@ -94,7 +94,7 @@ section {
   float: left;
   width: 30%;
   height: auto;
-  margin-left: 8%;
+  margin: 0% 0% 2% 8%;
 }
 
 .column {
@@ -108,6 +108,9 @@ section {
 
 .column:hover {
   background-color: #333;
+}
+
+.home-tiles .column:hover {
   width: 31%;
   height: auto;
   margin: 0.5%
@@ -173,14 +176,14 @@ footer .icon {
 }
 
 @media screen and (max-width:700px) {
-    .column {
+    .home-tiles .column {
         width: 96%;
     }
-    .column:hover {
+    .home-tiles .column:hover {
       width: 97%;
     }
-    .row {
-      margin-left: 2% 8% 2% 2%
+    .home-tiles .row {
+      margin: 0% 8% 0% 8%
     }
     .rhblock {
       color: white;
@@ -191,9 +194,30 @@ footer .icon {
     .portrait img {
       margin: 4% 4% 0% 12%
     }
-}
+  }
+
+@media screen and (max-width:1450px) {
 
 
-
-
+    .column {
+        width: 45%;
+    }
+    .row {
+      margin: 0% 8% 0% 8%
+    }
+    @media screen and (max-width:950px) {
+        .column {
+            width: 96%;
+        }
+        .column:hover {
+          width: 97%;
+        }
+        @media screen and (max-width:450px) {
+            .icon {
+              font-size: 30px
+            }
+            .social-tag p {
+              font-size: 21px
+            }
+    }
 }
